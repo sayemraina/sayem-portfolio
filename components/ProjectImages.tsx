@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Shot = { src: string; fit: string; bg?: string };
 
@@ -18,9 +18,30 @@ export default function ProjectImages({
 }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Only start auto-advancing once the card is actually on screen, so the
+  // first frame anyone sees is always screen 1 -- not whatever frame the
+  // rotation happened to reach while the card was still below the fold.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
-    if (images.length < 2 || paused) return;
+    if (!visible || images.length < 2 || paused) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let timer: ReturnType<typeof setInterval>;
     const start = setTimeout(() => {
@@ -33,11 +54,12 @@ export default function ProjectImages({
       clearTimeout(start);
       clearInterval(timer);
     };
-  }, [images.length, offsetMs, paused]);
+  }, [visible, images.length, offsetMs, paused]);
 
   return (
     <div
-      className="contents"
+      ref={containerRef}
+      className="absolute inset-0"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

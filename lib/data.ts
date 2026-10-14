@@ -90,6 +90,7 @@ export const projects = [
       "Proactive AI advisor for relationship intelligence. Recommends non-obvious next steps and connects you with people you didn't know to ask for.",
     url: "https://www.sabaconnect.io",
     images: [
+      { src: "/images/saba-0.jpg", fit: "full", bg: "#0A1624" },
       { src: "/images/saba-1.jpg", fit: "full", bg: "#0D1520" },
       { src: "/images/saba-2.jpg", fit: "full", bg: "#0D1627" },
       { src: "/images/saba-3.jpg", fit: "full", bg: "#0D1627" },
