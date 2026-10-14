@@ -10,10 +10,11 @@ export default function Projects() {
           return (
             <a
               key={project.title}
+              id={`project-${project.title.toLowerCase()}`}
               href={project.url}
               target={external ? "_blank" : undefined}
               rel={external ? "noopener noreferrer" : undefined}
-              className="group block"
+              className="group block scroll-mt-32"
             >
               <div className="rounded-2xl bg-[#EFEEEA] p-5 md:p-8">
                 <div

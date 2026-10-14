@@ -8,7 +8,7 @@ import SectionNav from "@/components/SectionNav";
 const sections = [
   { id: "projects", label: "Projects" },
   { id: "work", label: "Experience" },
-  { id: "podcast", label: "Podcast" },
+  { id: "project-podcast", label: "Podcast" },
 ];
 
 export default function Home() {
