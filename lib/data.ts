@@ -22,40 +22,55 @@ export const workExperience = [
     company: "Ground",
     role: "Founder",
     period: "2026 - Present",
-    description:
+    location: "Gurgaon",
+    description: [
       "Building no-prompt AI for mid-market CRE investment firms and brokerages.",
+    ],
     url: undefined,
   },
   {
     company: "Saba",
     role: "Founder",
     period: "2025 - 2026",
-    description:
-      "Built a proactive AI advisor that surfaced non-obvious connections and next steps, then executed the introductions — connecting you with people you didn't even know to ask for.",
+    location: "Bangalore",
+    description: [
+      "Built a proactive AI advisor that surfaced non-obvious next steps and the non-obvious person to act on them, then made the introduction.",
+    ],
     url: undefined,
   },
   {
     company: "Onnivation",
     role: "Manager, Strategy & Operations (Founder's Office)",
     period: "2024",
-    description:
-      "Repositioned the firm from a SaaS reseller to a strategic advisor — built the go-to-market around a new SI partnership and ran engagements across customers, product companies, and VC/PE partners alongside the founder.",
+    location: "Mumbai",
+    description: [
+      "Repositioned the firm from a SaaS reseller to a strategic advisor — built the go-to-market around a new SI partnership and ran engagements with customers, product companies, and VC/PE partners alongside the founder.",
+    ],
     url: undefined,
   },
   {
     company: "PricewaterhouseCoopers (PwC)",
     role: "Associate Consultant",
     period: "2022 - 2023",
-    description:
+    location: "Delhi",
+    description: [
       "Built EV penetration and charging infrastructure models that drove a German development bank's capital deployment strategy for India. Ran stakeholder relationships across 200+ organizations for a national EV financing program.",
+    ],
     url: undefined,
   },
   {
     company: "Hudson Institute",
     role: "Foreign Policy Researcher (Fellowship)",
     period: "2021 - 2022",
-    description:
-      "Organized a closed roundtable series on India-US economic relations across private sector, government, and academia. Tracked the US Innovation and Competition Act from drafting to Senate passage and produced the impact analysis.",
+    location: "Washington DC",
+    link: {
+      text: "authored a memo",
+      url: "https://www.linkedin.com/pulse/us-innovation-competition-act-objectives-government-businesses-raina/",
+    },
+    description: [
+      "Organized a closed roundtable series on India-US economic relations across private sector, government, and academia for one of DC's most influential foreign policy think tanks.",
+      "Researched developments in critical areas of the US-India relationship, and authored a memo on the US Innovation and Competition Act.",
+    ],
     url: undefined,
   },
 ];
@@ -64,7 +79,7 @@ export const projects = [
   {
     title: "Ground",
     description:
-      "No-prompt AI for mid-market CRE investment firms and brokerages. Captures site visits, pulls intelligence from the firm's scattered data, and proactively surfaces what needs attention.",
+      "No-prompt AI for mid-market CRE investment firms and brokerages. Captures site visits, pulls intelligence from the firm's scattered data, and gets each team member exactly what their role needs — without anyone chasing it.",
     url: "https://ground-landing-page.vercel.app",
     images: [{ src: "/images/ground-wordmark.svg", fit: "contain" }],
     year: "2026",
@@ -72,14 +87,14 @@ export const projects = [
   {
     title: "Saba",
     description:
-      "Proactive AI advisor for relationship intelligence. Recommended non-obvious next steps and connected you with people you didn't know to ask for — then made the introduction.",
+      "Proactive AI advisor for relationship intelligence. Recommends non-obvious next steps and connects you with people you didn't know to ask for.",
     url: "https://www.sabaconnect.io",
     images: [
       { src: "/images/saba-1.jpg", fit: "full", bg: "#0D1520" },
       { src: "/images/saba-2.jpg", fit: "full", bg: "#0D1627" },
       { src: "/images/saba-3.jpg", fit: "full", bg: "#0D1627" },
     ],
-    year: "2025",
+    year: "2026",
   },
   {
     title: "InfoMonitor",
@@ -96,7 +111,7 @@ export const projects = [
   {
     title: "Podcast",
     description:
-      "Conversations with founders and operators building in AI, SaaS, and deep tech. Guests include Shruti Gupta (Zania) and Sri Kallakuri (Dxtr Co.).",
+      "Conversations with founders and operators building in AI, SaaS, and Deep-Tech. Guests include Shruti Gupta (Ex CISO Airbnb, Instacart, Brex) and Sri Kallakuri (Founder Dxtr.co).",
     url: "#podcast",
     images: [{ src: "/images/podcast-preview.jpg", fit: "cover" }],
     year: "2025",

@@ -32,8 +32,7 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <span className="text-sm tabular-nums text-[#9CA3AF]">
-                  {project.year} &middot; {String(index + 1).padStart(2, "0")} /{" "}
-                  {String(projects.length).padStart(2, "0")}
+                  {project.year}
                 </span>
               </div>
               <p className="mt-1 leading-relaxed text-[#6B7280]">
