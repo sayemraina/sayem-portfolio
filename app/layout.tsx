@@ -16,11 +16,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Sayem Raina",
   description:
-    "Building Saba. Exploring how people and information connect. Founder, engineer, builder.",
+    "Building Ground, proactive AI for commercial real estate investors. Founder, engineer, builder.",
   openGraph: {
     title: "Sayem Raina",
     description:
-      "Building Saba. Exploring how people and information connect.",
+      "Building Ground, proactive AI for commercial real estate investors.",
     type: "website",
   },
 };

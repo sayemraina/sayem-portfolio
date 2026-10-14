@@ -1,4 +1,4 @@
-import { podcastEpisodes } from "@/lib/data";
+import { podcast, podcastEpisodes } from "@/lib/data";
 
 export default function Podcast() {
   return (
@@ -7,15 +7,18 @@ export default function Podcast() {
         <h2 className="text-sm font-medium uppercase tracking-widest text-[#6B7280] mb-4">
           Podcast
         </h2>
-        <p className="text-[#6B7280] mb-12">
-          Conversations with founders and operators building what comes next.
-        </p>
+        <h3 className="text-2xl font-bold tracking-tight text-[#1A1A1A] mb-2">
+          {podcast.name}
+        </h3>
+        <p className="text-[#6B7280] mb-12">{podcast.description}</p>
 
         <div className="space-y-6">
           {podcastEpisodes.map((ep, i) => (
             <a
               key={i}
               href={ep.url}
+              target={ep.url.startsWith("http") ? "_blank" : undefined}
+              rel={ep.url.startsWith("http") ? "noopener noreferrer" : undefined}
               className="flex items-center gap-6 p-5 rounded-xl border border-[#E5E7EB] bg-white hover:border-[#D97706]/30 transition-colors group"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-[#FEF3C7] to-[#FDE68A] flex items-center justify-center">
