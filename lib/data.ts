@@ -1,12 +1,19 @@
 export const siteConfig = {
   name: "Sayem Raina",
-  tagline: "Building Ground. No-Prompt AI for commercial real estate.",
-  bio: "I build products at the intersection of AI and judgment-heavy work. Currently building Ground, the cross-functional brain for mid-market CRE investment firms and brokerages — it captures site visits, organizes everything by property, deal, people, and workflow as you work, and gets each team member what they need without anyone chasing it. Previously founded Saba, an AI advisor for relationship intelligence, and built InfoMonitor, a narrative intelligence platform, solo in about a week. Earlier, I worked in the Founder's Office at Onnivation. Based in Gurugram.",
+  taglineLines: [
+    "Currently building Ground.",
+    "No-Prompt AI for commercial real estate.",
+  ],
+  bioLines: [
+    "I build AI products that do the work before you ask.",
+    "Previously founded Saba and built InfoMonitor.",
+    "Based in Gurgaon/Bangalore.",
+  ],
   email: "sayam07raina@gmail.com",
   social: {
     twitter: "https://x.com/sayemvirraina",
     github: "https://github.com/sayemraina",
-    linkedin: "https://linkedin.com/in/sayemraina",
+    linkedin: "https://www.linkedin.com/in/sayem-raina-384362153/",
   },
 };
 
@@ -59,32 +66,40 @@ export const projects = [
     description:
       "No-prompt AI for mid-market CRE investment firms and brokerages. Captures site visits, pulls intelligence from the firm's scattered data, and proactively surfaces what needs attention.",
     url: "https://ground-landing-page.vercel.app",
-    image: "/images/ground-preview.png",
-    tags: ["AI", "Commercial Real Estate", "Founder"],
+    images: [{ src: "/images/ground-wordmark.svg", fit: "contain" }],
+    year: "2026",
   },
   {
     title: "Saba",
     description:
       "Proactive AI advisor for relationship intelligence. Recommended non-obvious next steps and connected you with people you didn't know to ask for — then made the introduction.",
-    url: "https://app.sabaconnect.io",
-    image: "/images/saba-preview.png",
-    tags: ["AI", "Relationships", "Founder Tool"],
+    url: "https://www.sabaconnect.io",
+    images: [
+      { src: "/images/saba-1.jpg", fit: "full", bg: "#0D1520" },
+      { src: "/images/saba-2.jpg", fit: "full", bg: "#0D1627" },
+      { src: "/images/saba-3.jpg", fit: "full", bg: "#0D1627" },
+    ],
+    year: "2025",
   },
   {
     title: "InfoMonitor",
     description:
       "A self-updating narrative topology instrument. Maps competing positions on any contested topic into a measurable structure — across platforms, populations, and time. Built solo in a week.",
     url: "https://infomonitor.app",
-    image: "/images/infomonitor-preview.png",
-    tags: ["Narrative Intelligence", "D3.js", "Claude API"],
+    images: [
+      { src: "/images/infomonitor-1.png", fit: "full", bg: "#0E141C" },
+      { src: "/images/infomonitor-2.png", fit: "full", bg: "#0E141C" },
+      { src: "/images/infomonitor-3.png", fit: "full", bg: "#0E141C" },
+    ],
+    year: "2026",
   },
   {
     title: "Podcast",
     description:
-      "Conversations with founders and operators building in AI, SaaS, and deep tech. Guests include Shruti Gupta (Zania), Srikanth Kallakuri (Explorer AI).",
+      "Conversations with founders and operators building in AI, SaaS, and deep tech. Guests include Shruti Gupta (Zania) and Sri Kallakuri (Dxtr Co.).",
     url: "#podcast",
-    image: "/images/podcast-preview.png",
-    tags: ["Interviews", "Founders", "AI"],
+    images: [{ src: "/images/podcast-preview.jpg", fit: "cover" }],
+    year: "2025",
   },
 ];
 
@@ -114,14 +129,5 @@ export const podcastEpisodes = [
     company: "",
     topic: "New episodes dropping regularly",
     url: "#",
-  },
-];
-
-export const externalWriting = [
-  {
-    title: "Sample post title",
-    platform: "X",
-    url: "#",
-    date: "2026",
   },
 ];

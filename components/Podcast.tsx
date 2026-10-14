@@ -2,17 +2,17 @@ import { podcast, podcastEpisodes } from "@/lib/data";
 
 export default function Podcast() {
   return (
-    <section id="podcast" className="px-6 py-24">
-      <div className="max-w-[720px] mx-auto">
-        <h2 className="text-sm font-medium uppercase tracking-widest text-[#6B7280] mb-4">
+    <section id="podcast" className="scroll-mt-32">
+      <div>
+        <h2 className="text-sm font-medium uppercase tracking-widest text-[#6B7280] mb-8">
           Podcast
         </h2>
-        <h3 className="text-2xl font-bold tracking-tight text-[#1A1A1A] mb-2">
+        <h3 className="text-lg font-semibold text-[#1A1A1A] mb-1">
           {podcast.name}
         </h3>
-        <p className="text-[#6B7280] mb-12">{podcast.description}</p>
+        <p className="text-[#6B7280] mb-6">{podcast.description}</p>
 
-        <div className="space-y-6">
+        <div className="space-y-3">
           {podcastEpisodes.map((ep, i) => (
             <a
               key={i}
