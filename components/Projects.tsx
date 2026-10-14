@@ -46,7 +46,7 @@ export default function Projects() {
                       href={project.link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline underline-offset-2 transition-colors hover:text-[#1A1A1A]"
+                      className="underline decoration-[#1A1A1A]/50 decoration-2 underline-offset-2 transition-colors hover:text-[#1A1A1A] hover:decoration-[#1A1A1A]"
                     >
                       {project.link.text}
                     </a>

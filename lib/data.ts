@@ -124,8 +124,7 @@ export const projects = [
 
 export const podcast = {
   name: "Build and Beyond",
-  description:
-    "Conversations with founders and operators building what comes next.",
+  description: "Podcast for the intrinsically curious.",
 };
 
 export const podcastEpisodes = [
