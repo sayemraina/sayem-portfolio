@@ -100,6 +100,10 @@ export const projects = [
     title: "InfoMonitor",
     description:
       "A self-updating narrative topology instrument. Maps competing positions on any contested topic into a measurable structure — across platforms, populations, and time. Built solo in a week.",
+    link: {
+      text: "Built solo in a week.",
+      url: "https://x.com/SayemVirRaina/status/2035777706563129357?s=20",
+    },
     url: "https://infomonitor.app",
     images: [
       { src: "/images/infomonitor-1.png", fit: "full", bg: "#0E141C" },
